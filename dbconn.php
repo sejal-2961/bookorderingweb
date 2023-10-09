@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "bookstore";
+$dbname = "book_store";
 
 
 $conn = mysqli_connect($servername,$username,$password,$dbname);
@@ -11,8 +11,8 @@ $conn = mysqli_connect($servername,$username,$password,$dbname);
 if(!$conn){
     die  ('failed to connect'.mysqli_connect_error());
 }
-else{
-    echo "successfully connected";
-}
+// else{
+//     echo "successfully connected";
+// }
 
 ?>

@@ -1,3 +1,12 @@
+<?php
+
+// if($_SESSION['$username']){
+//     echo "Heyy";
+// }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,9 +43,9 @@
             </div>
         </div>
 
-    <div class="image">
+    <!-- <div class="image">
         <img src="" alt="Bookimages" height="400px" width="350px">
-    </div>
+    </div> -->
 
 
     

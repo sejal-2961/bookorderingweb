@@ -55,16 +55,16 @@
 
         
 
-    <div class="btn2">
+    <!-- <div class="btn2">
         <a href="receiptgeneration.php">Order Now</a>
-    </div>
+    </div> -->
     </div>
     <div>
             <?php
                 include 'dbconn.php';
 
-                $Users_query = "SELECT * FROM bookdetails";
-                $user_result = mysqli_query($conn,$Users_query);
+                $query = "SELECT * FROM books";
+                $user_result = mysqli_query($conn,$query);
                 
                 ?>
                 <table border="1" cellpadding="0" cellspacing="0">
@@ -74,10 +74,10 @@
                         <th>AUTHOR</th>
                         <th>GENRE</th>
                         <th>PRICE</th>
+                        <th colspan="2">Actions</th>
                     </tr>
                     <?php
                     if (mysqli_num_rows($user_result) > 0) {
-                    
                         
                         $str = '';
                         while($row = mysqli_fetch_assoc($user_result)) {
@@ -87,8 +87,8 @@
                                         <td>".$row['author']."</td>
                                         <td>".$row['genre']."</td>
                                         <td>".$row['price']."</td>
-                                        <td><a href='edit_user.php?id=".$row['id']."'  class='btn2'>Edit</a></td>
-                                        <td><a href='receiptgeneration.php?id=".$row['id']."'  name='order' class='btn2'>Order</a></td>
+                                        <td><a href='edit_user.php?id=".$row['id']."' style='color: black;' >Edit</a></td>
+                                        <td><a href='receiptgeneration.php?id=".$row['id']."'  name='order' style='color: black;'>Order</a></td>
                                     </tr>";
 
                                     
