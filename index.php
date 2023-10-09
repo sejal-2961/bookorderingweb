@@ -24,7 +24,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="addbookdetails.php">Add Book Details</a></li>
                 <li><a href="bookordering.php">Book Ordering</a></li>
-                <li><a href="receiptgeneration.php">Receipt</a></li>
+                <!-- <li><a href="receiptgeneration.php">Receipt</a></li> -->
                 <li><a href="bookinghistory.php">Book History</a></li>
             </ul>
         </nav>

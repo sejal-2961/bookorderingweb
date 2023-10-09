@@ -45,7 +45,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="addbookdetails.php">Add Book Details</a></li>
                 <li><a href="bookordering.php">Book Ordering</a></li>
-                <li><a href="receiptgeneration.php">Receipt</a></li>
+                <!-- <li><a href="receiptgeneration.php">Receipt</a></li> -->
                 <li><a href="bookinghistory.php">Book History</a></li>
             </ul>
         </nav>
@@ -63,7 +63,7 @@
             <?php
                 include 'dbconn.php';
 
-                $query = "SELECT * FROM books";
+                $query = "SELECT * FROM books WHERE ordered=False";
                 $user_result = mysqli_query($conn,$query);
                 
                 ?>
@@ -80,21 +80,17 @@
                     if (mysqli_num_rows($user_result) > 0) {
                         
                         $str = '';
+                        $id = 1;
                         while($row = mysqli_fetch_assoc($user_result)) {
                             $str .="<tr>
-                                        <td>".$row['id']."</td>
+                                        <td>".$id."</td>
                                         <td>".$row['title']."</td>
                                         <td>".$row['author']."</td>
                                         <td>".$row['genre']."</td>
                                         <td>".$row['price']."</td>
-                                        <td><a href='edit_user.php?id=".$row['id']."' style='color: black;' >Edit</a></td>
-                                        <td><a href='receiptgeneration.php?id=".$row['id']."'  name='order' style='color: black;'>Order</a></td>
+                                        <td><a href='order_book.php?id=".$row['id']."'  name='order' style='color: black;'>Order</a></td>
                                     </tr>";
-
-                                    
-                                        
-
-                                        
+                            $id++;
                         }
                         echo $str;
                     } else {
