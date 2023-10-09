@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-     
 }
 body{
     background: #edf0f1;
@@ -19,6 +18,8 @@ body{
 .nav_bar{
     box-shadow: 10px 5px 2px lightblue;
     border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     height: 100px;
     width: 100%;
     background-color: #24252a;

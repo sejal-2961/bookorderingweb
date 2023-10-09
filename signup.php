@@ -18,13 +18,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $username = $_POST['name'];
     $email = $_POST["email"];
     $password = $_POST['password'];
-    $password = $_POST['password'];
     
     
 
     $validationQuery = "SELECT * 
                 FROM login_data
-                WHERE 'name'='$user name' AND email='$email'";
+                WHERE 'name'='$username' AND email='$email'";
 
     $r1 = mysqli_query($conn, $validationQuery);
     

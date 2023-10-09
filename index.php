@@ -1,3 +1,12 @@
+<?php
+
+// if($_SESSION['$username']){
+//     echo "Heyy";
+// }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +24,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="addbookdetails.php">Add Book Details</a></li>
                 <li><a href="bookordering.php">Book Ordering</a></li>
-                <li><a href="receiptgeneration.php">Receipt</a></li>
+                <!-- <li><a href="receiptgeneration.php">Receipt</a></li> -->
                 <li><a href="bookinghistory.php">Book History</a></li>
             </ul>
         </nav>
@@ -34,9 +43,9 @@
             </div>
         </div>
 
-    <div class="image">
+    <!-- <div class="image">
         <img src="" alt="Bookimages" height="400px" width="350px">
-    </div>
+    </div> -->
 
 
     

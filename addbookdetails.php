@@ -16,7 +16,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="addbookdetails.php">Add Book Details</a></li>
                 <li><a href="bookordering.php">Book Ordering</a></li>
-                <li><a href="receiptgeneration.php">Receipt</a></li>
+                <!-- <li><a href="receiptgeneration.php">Receipt</a></li> -->
                 <li><a href="bookinghistory.php">Book History</a></li>
             </ul>
         </nav>
@@ -27,7 +27,7 @@
         <main>
         <h1>Add Book Details </h1>
         <table>
-        <form action="bookordering.php" method="POST">
+        <form action="addbookdetails.php" method="POST">
             <tr>
 
             <td>
@@ -58,16 +58,6 @@
 </html>
 
 
-
-
-
-
-
-
-
-
-
- 
 <?php
 
  if(isset($_POST['add_details'])){
@@ -79,8 +69,8 @@
         $genre = $_POST['genre'];
         $price = $_POST['price'];
 
-        $sql = "INSERT INTO bookdetails(id,title,author,genre,price)
-        VALUES('NULL','$title','$author','$genre','$price')";
+        $sql = "INSERT INTO books(title,author,genre,price)
+        VALUES('$title','$author','$genre','$price')";
 
         $result = mysqli_query($conn,$sql);
         
