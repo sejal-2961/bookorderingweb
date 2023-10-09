@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add details</title>
+    <title>USER FORM</title>
     <link rel="stylesheet" href="homestyle.css">
 </head>
 <body>
@@ -20,6 +20,36 @@
             </ul>
         </nav>
     </header>
+    </div>
+
+    <div class="form">
+        <main>
+        <h1>USER DETAILS </h1>
+        <table>
+        <form action="receipt.php" method="POST">
+            <tr>
+
+            <td>
+            <label for=name">Name:</label>
+            <input type="text"  id=name" name=name" class="input_field"  required></td>
+            </tr>
+            <tr>
+            <td><label for="email">Email:</label>
+            <input type="email"  id="email"  name="email" class="input_field"  required></td></tr>
+<tr>
+            <td><label for="contact_number">Contact Number:</label>
+            <input type="number"  id="contact_number"  name="contact_number" class="input_field"  required></td></tr>
+            <tr>
+            <td><label for="address">Address:</label>
+            <textarea id="address"  name="address" cols="5" rows="5"  class="input_field"  required></textarea> 
+        </td>
+        </tr>
+
+<tr>
+            <td><input type="submit" value="GENERATE" name="generate" class="btn"></td></tr>
+        </form>
+        </table>
+        </main>
     </div>
 
 </body>

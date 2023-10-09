@@ -21,8 +21,7 @@
         </nav>
     </header>
     </div>
-    <!-- BAckgroung image -->
-    <!-- <img src="image/bg.png" > -->
+    
 
 
 

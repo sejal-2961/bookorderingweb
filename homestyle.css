@@ -7,6 +7,10 @@
 }
 body{
     background: #edf0f1;
+    background:url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
     
     
@@ -89,7 +93,7 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-.main-header .header h5{
+.main-header .header h5,h1{
     font-size: 30px;
     color: #0b910b;
     font-weight: 550;
@@ -104,4 +108,31 @@ header{
 .main-header p{
     margin-bottom: 60px;
 
+}
+
+.border{
+    border: 2px solid gray;
+    height: 400px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 600px;
+}
+
+.btn2{
+    background: #0b910b;
+    border: 1px solid #0b910b;
+    width: 150px;
+    height: 40px;
+    margin: 350px auto;
+    font-size: 24px;
+    color: #ffff;
+    font-weight: 400px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.btn2:hover{
+    color: #0b910b;
+    background-color: #ffffff; 
 }
